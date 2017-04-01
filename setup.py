@@ -8,3 +8,4 @@ setup(name='mailgunbot',
 	  author='Chris Ochoa',
 	  author_email='cochoa0x1@gmail.com',
 	  packages=['mailgunbot'],
+	  )
