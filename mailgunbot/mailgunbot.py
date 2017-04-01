@@ -26,11 +26,12 @@ class MailGunBot(object):
 	finally the bot calls self.process_new_message to do something with the message.
 
 	'''
-	def __init__(self, domain, key, data_dir= os.path.join(os.getcwd(),'mailgun_inbox') ):
+	def __init__(self, domain, key, data_dir= os.path.join(os.getcwd(),'mailgun_inbox'), debug=False):
 		self.domain = domain
 		self.key = key
 		self.data_dir=data_dir
 		self.mail={}
+		self.debug=debug
 		
 	def _get(self,url):
 		'''get request helper'''
@@ -120,6 +121,8 @@ class MailGunBot(object):
 				self.download_inbox()
 			except Exception as e:
 				print('something bad happened...')
+				if self.debug:
+					print(e)
 			print('sleeping for %d seconds... '%dt)
 			sleep(dt)
 
