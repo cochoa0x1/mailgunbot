@@ -107,7 +107,8 @@ class MailGunBot(object):
 
 	def should_download_attachment(self, message, attachment):
 		'''decide if we want to download this file'''
-		return True
+		print('attachment downloading is turned on, this is a security risk! Validate your senders and files!!!')
+		return False
 
 	def process_new_message(self,message, key):
 		'''do something afterward'''
