@@ -19,7 +19,7 @@ bot.run()
 
 When a message is found, the bot calls self.should_fetch_message to decide to download
 
-afterwards, if there are attatchements, the bot calls self.should_download_attachment
+afterwards, if there are attachments, the bot calls self.should_download_attachment
 
 finally the bot calls self.process_new_message to do something with the message.
 
