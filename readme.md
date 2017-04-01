@@ -27,7 +27,8 @@ finally the bot calls self.process_new_message to do something with the message.
 
 * requests
 * tqdm
-* an account on [mailgun.com](www.mailgun.com)
+* an account on [mailgun](http://www.mailgun.com)
+
 
 #### Install:
 
