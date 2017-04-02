@@ -4,3 +4,5 @@
 **.DS_Store
 build/
 mailgun_inbox/*
+dist/
+mailgunbot.egg-info/
