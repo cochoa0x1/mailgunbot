@@ -27,9 +27,6 @@ class Bot(MailGunBot):
 		subject = item['message']['headers']['subject']
 		return subject.strip().upper() == 'HELLO'
 		
-	def should_download_attachment(self, message, attachment):
-		return False
-
 
 if __name__=='__main__':
 	bot = Bot(domain,key)
